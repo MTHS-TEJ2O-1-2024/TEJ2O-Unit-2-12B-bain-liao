@@ -34,6 +34,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.show()
+        basic.showIcon(IconNames.Sad)
     }
     // if distance was >= 10
     else {
@@ -44,6 +45,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.show()
+        basic.showIcon(IconNames.Happy)
 }
     // cleanup
     pause(1000)
@@ -52,5 +54,4 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
-    basic.showIcon(IconNames.Happy)
 })
