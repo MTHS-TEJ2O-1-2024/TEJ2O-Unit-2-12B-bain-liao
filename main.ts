@@ -35,6 +35,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.show()
     }
+    // if distance was >= 10
     else {
         basic.clearScreen()
         basic.showNumber(objectDistance), basic.showString('cm')
