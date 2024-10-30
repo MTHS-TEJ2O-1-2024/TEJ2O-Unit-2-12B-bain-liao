@@ -34,9 +34,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
         basic.showIcon(IconNames.Sad)
         basic.pause(1000)
-    }
-    // if distance was >= 10
-    else {
+    } else {
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
